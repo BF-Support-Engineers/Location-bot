@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+    <link href="./Public/main.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+<body style="font-family:'Segoe UI'">
+    <h2>Location Page</h2>
+    <h3>Finding your location.</h3>
+
+    <div>
+        <p>Use this area to provide additional information.</p>
+
+
+        <button id="button1" onclick=getLocationData()>Getting location data.</button>
+        <p id="cityState"></p>
+        <p id="geoLocation"></p>
+        <p id='testLocaiton'></p>
+
+    </div>
+    <div id="bot"></div>
+
+    <!--<iframe height=600 width=500 src='https://webchat.botframework.com/embed/v-stkanb-location-bot?s=KJATFZsMa-k.cwA.XFs.2GgWSNNJ1ftGOINdsXs800BKHP_kHhwmC6i9-gdNEqI'></iframe>-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+    <script src="./Public/main.js"></script>
+</body>
+
+</html>
