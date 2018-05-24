@@ -1,7 +1,7 @@
 ﻿/* global GetUserCountryByIp */
 'use strict';
 
-var access_key = "";
+var access_key = "<Enter Your API Access Key>";
 var geoLocation = {};
 var latitude;
 var longitude;
@@ -44,7 +44,7 @@ const bot = {
 };
 
 const botConnection = new BotChat.DirectLine({
-    secret: ""
+    secret: "<Enter Your DirectLine Secret."
 });
 
 BotChat.App({
@@ -65,7 +65,7 @@ botConnection.activity$
     });
 
 function postLocationData(newlocation) {
-    console.log('3: ' + newlocation);
+    console.log(newlocation);
 }
 
 function getLocationData() {
