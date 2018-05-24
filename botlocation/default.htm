@@ -15,10 +15,19 @@
         <p>Use this area to provide additional information.</p>
 
 
-        <button id="button1" onclick=getLocationData()>Getting location data.</button>
-        <p id="cityState"></p>
-        <p id="geoLocation"></p>
-        <p id='testLocaiton'></p>
+        <div id="locationDiv">
+            <div id="apiLocation">
+                Location derived from API
+                <button id="button1" onclick=getAPIData()>Getting API location data</button>
+                <p id="apiGeoLocation">Data loading...</p>
+            </div>
+            <div id="browserLocation">
+                Location derived from browser
+                <button id="button2" onclick=getBrowserData()>Getting browser location data</button>
+                <p id="browserGeoLocation">Data loading...</p>
+            </div>
+        </div>
+
 
     </div>
     <div id="bot"></div>

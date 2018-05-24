@@ -3,3 +3,12 @@
     width: 500px;
     position: relative;
 }
+
+#apiLocation, #browserLocation {
+    width: 350px;
+    display: inline-block;
+}
+
+button {
+    margin-bottom: 10px;
+}
